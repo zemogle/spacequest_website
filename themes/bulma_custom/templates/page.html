@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block herotitle %}
+{{page.title}}
+{% endblock %}
+
+{% block subtitle %}
+{{page.subtitle}}
+{% endblock %}
+
+{% block mainbody %}
+<div class="columns">
+    <div class="column is-one-third">
+        <figure class="image">
+            <img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/SpaceQuest_logo.png" alt="Space Quest logo" />
+          </figure>
+    </div>
+
+    <div class="column">
+        <div class="content">
+            {{page.content}}
+        </div>
+    </div>
+</div>
+{% endblock %}

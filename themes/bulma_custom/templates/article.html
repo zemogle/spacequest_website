@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block herotitle %}
+{{article.title}}
+{% endblock %}
+
+{% block subtitle %}
+{{article.subtitle}}
+{% endblock %}
+
+{% block mainbody %}
+<div class="columns">
+
+    <div class="column is-three-fifths">
+      <div class="notification green-bg rounded-corners">
+      <div class="columns is-desktop">
+        <div class="column is-3">
+          <figure class="image">
+            <img src="https://static.darkmattersheep.net/spacequest/{{article.illustration}}" alt="Illustration of {{article.name}}" />
+          </figure>
+        </div>
+        <div class="column">
+          <p>{{article.content}}</p>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <div class="column is-two-fifths">
+      <figure class="image image-with-sticker">
+        <img src="https://static.darkmattersheep.net/spacequest/{{article.image}}" class="rounded-corners" />
+        <caption>{{article.caption}}</caption>
+      </figure>
+    </div>
+  </div>
+{% endblock %}

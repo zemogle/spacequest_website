@@ -1,0 +1,55 @@
+{% extends 'base.html'%}
+
+{% block herotitle %}
+{{ object.name }}
+{% endblock %}
+
+{% block subtitle %}
+{{object.teaser}}
+{% endblock %}
+
+{% block mainbody %}
+
+
+<div class="columns">
+
+    <div class="column is-three-fifths">
+      <div class="notification green-bg rounded-corners">
+      <div class="columns is-desktop">
+        <div class="column is-3">
+          <figure class="image">
+            <img src="{{object.illustration_url}}" alt="Illustration of {{object.name}}" />
+          </figure>
+        </div>
+        <div class="column">
+          <p>{{object.description|safe}}</p>
+        </div>
+      </div>
+    </div>
+
+    <h3>More events</h3>
+    <div class="is-flex">
+      <div class="is-flex-direction-row">
+        <img src="{% static 'nam_logo.jpg' %}" alt="NAM 2023 logo" style="width:150px"/>
+      </div>
+      <div class="is-flex-direction-row">
+      <div class="content">
+        <ul>
+        <li><a href="https://www.eventbrite.com/e/unveiling-the-universes-darkest-secrets-tickets-638953646557" target="_blank">Public Talks</a></li>
+        <li><a href="https://www.eventbrite.com/e/astroart-origins-exhibition-preview-tickets-639326150727" target="_blank">AstroArt Exhibition</a></li>
+        <li><a href="https://www.nam2023.org/public-engagement/astronomy-on-tap" target="_blank">Astronomy on Tap</a></li>
+        <li><a href="https://www.eventbrite.com/e/celebration-space-tickets-638623840097" target="_blank">Celebration Space</a></li>
+      </ul>
+      </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="column is-two-fifths">
+      <figure class="image image-with-sticker">
+        <img src="{{object.image_url}}" class="rounded-corners" />
+        <caption>{{object.caption}}</caption>
+      </figure>
+    </div>
+  </div>
+{% endblock %}

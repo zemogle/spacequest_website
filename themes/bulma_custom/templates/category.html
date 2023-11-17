@@ -1,0 +1,28 @@
+{% extends 'base.html'%}
+
+{% block herotitle %}All the Things!{% endblock %}
+{% block subtitle %}Our name for astronomical objects{% endblock %}
+
+
+{% block mainbody %}
+
+<div class="columns is-multiline is-mobile">
+{% for object in articles %}
+<div class="column is-half-mobile is-one-quarter-desktop">
+  <div class="card thinglist">
+    <div class="card-image">
+      <figure class="image is-square">
+        <a href="/{{ object.slug }}"><img src="https://static.darkmattersheep.net/spacequest/{{object.illustration}}" alt="Illustration of {{object.name}}" class="card-illustration"></a>
+      </figure>
+    </div>
+    <div class="card-content">
+      <div class="content">
+        <p class="title is-4"><a href="/{{ object.slug }}">{{ object.title }}</a></p>
+        {{object.subtitle}}
+      </div>
+    </div>
+  </div>
+</div>
+{% endfor %}
+</div>
+{% endblock %}

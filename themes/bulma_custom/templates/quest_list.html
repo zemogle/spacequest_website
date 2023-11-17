@@ -1,0 +1,15 @@
+{% extends 'base.html'%}
+
+{% block herotitle %}Find a Quest{% endblock %}
+{% block subtitle %}This list will constantly change so check back regularly{% endblock %}
+
+{% block mainbody %}
+
+<div class="content">
+{% for object in object_list %}
+<h2><a href="{% url 'quest' object.slug %}">{{ object.name }}</a></h2>
+
+{{object.description|safe}}
+{% endfor %}
+</div>
+{% endblock %}

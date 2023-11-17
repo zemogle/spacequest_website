@@ -1,0 +1,29 @@
+{% extends 'base.html'%}
+
+{% block herotitle %}
+{{ object.name }}
+{% endblock %}
+
+{% block subtitle %}
+{{object.teaser}}
+{% endblock %}
+
+{% block mainbody %}
+
+<div class="columns content">
+    <div class="column is-one-quarter"> 
+        <h3>Location</h3>
+        <p>{{object.location}}
+            <ul>
+                <li><a href="https://plus.codes/{{object.pluscode}}">{{object.pluscode}}</a></li>
+                <li><a href="https://w3w.co/{{object.threewords}}">{{object.threewords}}</a></li>
+                <li><a href="{{object.map}}">Google Map</a></li>
+            </ul>
+        </p>
+    </div>
+    <div class="column">
+        {{object.description|safe}}
+    </div>
+</div>
+
+{%endblock%}
