@@ -46,7 +46,7 @@ a:focus,{
 
 a:hover {
   background-color: #cceffc;
-  color: #fff;
+  color: #555;
 }
 
 p {
@@ -76,6 +76,11 @@ p {
 .footer h4,
 .footer a {
   color: #fff;
+}
+
+.footer a:hover {
+  background-color: #fff;
+  color:#555;
 }
 
 .brand {

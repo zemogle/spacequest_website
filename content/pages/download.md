@@ -14,7 +14,15 @@ slug: download
     <li>Remember to be considerate. Take your posters down when your event has finished. </li>
 </ul>
 
-<p><a href="https://static.darkmattersheep.net/spacequest/spacequest-posters.pdf" class="button is-primary">Download posters (space background)</a></p>
+<h3>Posters</h3>
+<ul>
+    <li><a href="https://static.darkmattersheep.net/spacequest/spacequest-posters.pdf">Space background posters <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+    <li><a href="https://static.darkmattersheep.net/spacequest/spacequest_plain_combined.pdf">Plain background posters <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+</ul>
 
-<p><a href="https://static.darkmattersheep.net/spacequest/spacequest_plain_combined.pdf" class="button is-primary">Download posters (plain background)</a></p>
+<h3>Answer sheets</h3>
+<ul>
+    <li><a href="https://static.darkmattersheep.net/spacequest/Space_Quest_answer_colour.pdf">Colour sheet  <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+    <li><a href="https://static.darkmattersheep.net/spacequest/Space_Quest_answer.pdf">Black &amp; White sheet  <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+</ul>
 
